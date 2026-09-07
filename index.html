@@ -2,1088 +2,1304 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    
-    <title>ShineAwards 2027 — главное событие WMine</title>
-    <meta name="description" content="ShineAwards 2027 — главное событие WMine. 30 номинаций, аукцион, шоу частиц и подарки для всех зрителей.">
-    <meta name="theme-color" content="#0b1118">
-    <meta name="robots" content="index, follow">
-    
-    <!-- SEO: canonical и og:url -->
-    <link rel="canonical" href="https://wminepe.github.io/shine/">
-    <meta property="og:url" content="https://wminepe.github.io/shine/">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="ShineAwards 2027 — главное событие WMine">
-    <meta property="og:description" content="Главное событие WMine: 30 номинаций, аукцион, шоу частиц и подарки для всех зрителей.">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="WMine">
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:image" content="https://wminepe.github.io/shine/assets/shineawards-og.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:alt" content="ShineAwards 2027">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ShineAwards 2027 — главное событие WMine">
-    <meta name="twitter:description" content="Главное событие WMine: 30 номинаций, аукцион, шоу частиц и подарки.">
-    <meta name="twitter:image" content="https://wminepe.github.io/shine/assets/shineawards-og.jpg">
-    <meta name="twitter:image:alt" content="ShineAwards 2027">
-    
-    <!-- Favicon SVG -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101820'/%3E%3Cpath d='M32 8 38 26 56 32 38 38 32 56 26 38 8 32 26 26Z' fill='%238ed8ff'/%3E%3C/svg%3E" type="image/svg+xml">
-    
-    <!-- Структурированные данные Schema.org -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "ShineAwards 2027",
-      "description": "ShineAwards 2027 — главное событие WMine: 30 номинаций, аукцион, шоу частиц и подарки для зрителей.",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-      "location": {
-        "@type": "VirtualLocation",
-        "url": "https://wminepe.github.io/shine/"
-      },
-      "url": "https://wminepe.github.io/shine/",
-      "image": "https://wminepe.github.io/shine/assets/shineawards-og.jpg",
-      "organizer": {
-        "@type": "Organization",
-        "name": "WMine",
-        "url": "https://wminepe.github.io/shine/"
-      }
-    }
-    </script>
-    
-    <!-- Шрифты -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>ShineAwards 2027 | Премия WMine</title>
+    <meta name="description" content="ShineAwards — ежегодная премия сообщества WMine. Церемония 6 января 2027.">
+    <meta name="theme-color" content="#0a0e1a">
+    <link rel="icon" href="https://i.ibb.co/Gfpx4nYh/photo-2026-09-04-21-37-34.jpg" type="image/jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* ============================================
-                   ПЕРЕМЕННЫЕ ДИЗАЙН-СИСТЕМЫ
-                ============================================ */
         :root {
-            color-scheme: dark;
-            
-            /* Цвета */
-            --bg-main: #101820;
-            --bg-deep: #0b1118;
-            --bg-surface: #172432;
-            --bg-elevated: #203244;
-            
-            --text-main: #f7fbff;
-            --text-secondary: #c3d0dc;
-            --text-muted: #8293a3;
-            
-            --accent-blue: #8ed8ff;
-            --accent-violet: #8b7dff;
-            --accent-cyan: #58e0da;
-            --accent-warm: #e9c98d;
-            
-            --border-light: rgba(255, 255, 255, 0.16);
-            --border-soft: rgba(160, 210, 255, 0.18);
-            
-            /* Скругления */
-            --radius-sm: 10px;
-            --radius-md: 16px;
-            --radius-lg: 24px;
-            --radius-xl: 32px;
-            --radius-full: 9999px;
-            
-            /* Тени */
-            --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-            --shadow-btn: 0 8px 32px rgba(142, 216, 255, 0.25);
-            
-            /* Переходы */
+            --bg-primary: #0a0f1e;
+            --bg-card: rgba(255,255,255,0.05);
+            --text-primary: #f4f8ff;
+            --text-secondary: #a8b8d0;
+            --text-muted: #6a7f9e;
+            --blue: #7dd3ff;
+            --cyan: #6ee7e0;
+            --violet: #b4a4ff;
+            --gold: #f5d47e;
+            --rose: #ff9ecb;
+            --orange: #ff9a4d;
+            --radius: 20px;
+            --radius-sm: 12px;
+            --transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
             --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-smooth: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-            
-            /* Шрифты */
-            --font-display: "Unbounded", sans-serif;
-            --font-body: "Manrope", sans-serif;
         }
-
-        /* ============================================
-                   БАЗОВЫЙ СБРОС
-                ============================================ */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 100px;
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-        }
-
-        body {
-            min-width: 320px;
-            min-height: 100vh;
-            margin: 0;
-            overflow-x: clip;
-            
-            color: var(--text-main);
-            background-color: var(--bg-deep);
-            background-image:
-                radial-gradient(circle at 15% 10%, rgba(94, 195, 255, 0.2), transparent 32%),
-                radial-gradient(circle at 85% 20%, rgba(132, 104, 255, 0.18), transparent 30%),
-                linear-gradient(135deg, #0b1118 0%, #172b3d 100%);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: scroll;
-            
-            font-family: var(--font-body);
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* Включаем fixed фон только для десктопов с поддержкой hover */
-        @media (min-width: 768px) and (hover: hover) {
-            body {
-                background-attachment: fixed;
-            }
-        }
-
-        /* Деликатный шум */
-        body::after {
-            content: '';
-            position: fixed;
-            inset: 0;
-            z-index: 1;
-            pointer-events: none;
-            opacity: 0.03;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-        }
-
-        /* Основной контент поверх шума */
-        .page-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        button,
-        input,
-        textarea,
-        select {
-            font: inherit;
-            color: inherit;
-        }
-
-        button {
-            border: 0;
-            cursor: pointer;
-            min-height: 44px;
-        }
-
-        button:disabled {
-            cursor: not-allowed;
-            opacity: 0.55;
-        }
-
-        img,
-        svg {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        ul,
-        ol {
-            list-style: none;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            overflow-wrap: break-word;
-            text-wrap: balance;
-            font-family: var(--font-display);
-            font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: -0.03em;
-            color: var(--text-main);
-        }
-
-        p,
-        li {
-            overflow-wrap: break-word;
-        }
-
-        a {
-            color: var(--accent-blue);
-            text-decoration: none;
-            transition: color var(--transition-base);
-        }
-
-        a:hover {
-            color: #ffffff;
-        }
-
-        :focus-visible {
-            outline: 3px solid var(--accent-blue);
-            outline-offset: 4px;
-            border-radius: 4px;
-        }
-
-        a:focus-visible,
-        button:focus-visible {
-            outline: 3px solid var(--accent-blue);
-            outline-offset: 4px;
-        }
-
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-        }
-
-        /* ============================================
-                   КОНТЕЙНЕР
-                ============================================ */
-        .container {
-            width: min(1320px, calc(100% - 40px));
-            margin-inline: auto;
-        }
-
-        /* ============================================
-                   ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ
-                ============================================ */
-        .shine-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.375rem 1rem;
-            border-radius: var(--radius-full);
-            background: rgba(142, 216, 255, 0.08);
-            border: 1px solid rgba(142, 216, 255, 0.2);
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--accent-blue);
-            max-width: 100%;
-            white-space: normal;
-            text-align: center;
-        }
-
-        .shine-badge::before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--accent-blue);
-            box-shadow: 0 0 8px var(--accent-blue);
-            flex-shrink: 0;
-        }
-
-        /* ============================================
-                   ШАПКА
-                ============================================ */
-        .site-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding-top: max(1rem, env(safe-area-inset-top));
-            padding-bottom: 1rem;
-            background: rgba(11, 17, 24, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            transition: all var(--transition-base);
-        }
-
-        .site-header.scrolled {
-            background: rgba(11, 17, 24, 0.95);
-            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
-            padding-top: max(0.75rem, env(safe-area-inset-top));
-            padding-bottom: 0.75rem;
-        }
-
-        .header-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-
-        .brand-logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-family: var(--font-display);
-            font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 0.02em;
-            color: var(--text-main);
-            text-decoration: none;
-        }
-
-        .brand-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 1px solid var(--border-soft);
-            flex-shrink: 0;
-            box-shadow: 0 0 20px rgba(142, 216, 255, 0.2);
-        }
-
-        .brand-icon img {
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { 
+            scroll-behavior: smooth; 
+            scroll-padding-top: 80px;
+            overflow-x: hidden;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            max-width: 100%;
         }
-
-        .main-nav {
-            display: flex;
-            gap: 0.25rem;
-            align-items: center;
-        }
-
-        .main-nav a {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            font-weight: 500;
-            padding: 0.5rem 0.875rem;
-            border-radius: var(--radius-full);
-            transition: all var(--transition-base);
-            white-space: nowrap;
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
             position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            line-height: 1.6;
+            -webkit-tap-highlight-color: transparent;
+        }
+        ::selection { background: var(--blue); color: #0a0f1e; }
+
+        .bg-glow { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+        .bg-glow .orb {
+            position: absolute; border-radius: 50%;
+            filter: blur(100px); opacity: 0.3;
+            animation: orbFloat 20s ease-in-out infinite alternate;
+        }
+        .bg-glow .orb:nth-child(1) {
+            width: 700px; height: 700px; top: -15%; left: -15%;
+            background: radial-gradient(circle, rgba(125,211,255,0.25), transparent);
+        }
+        .bg-glow .orb:nth-child(2) {
+            width: 550px; height: 550px; bottom: -15%; right: -15%;
+            background: radial-gradient(circle, rgba(180,164,255,0.2), transparent);
+            animation-delay: -5s;
+        }
+        .bg-glow .orb:nth-child(3) {
+            width: 450px; height: 450px; top: 35%; left: 35%;
+            background: radial-gradient(circle, rgba(110,231,224,0.12), transparent);
+            animation-delay: -10s;
+        }
+        @keyframes orbFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(70px, -50px) scale(1.1); }
+            66% { transform: translate(-35px, 70px) scale(0.9); }
+            100% { transform: translate(50px, 35px) scale(1.05); }
         }
 
-        .main-nav a:hover {
-            color: var(--text-main);
-            background: rgba(255, 255, 255, 0.06);
+        .stars-container { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+        .star {
+            position: absolute; width: 2px; height: 2px;
+            background: #fff; border-radius: 50%;
+            animation: twinkle 3s ease-in-out infinite;
+            opacity: 0;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1); }
         }
 
-        /* Мобильное меню */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-md);
-            width: 44px;
-            height: 44px;
-            cursor: pointer;
-            color: var(--text-main);
-            font-size: 1.25rem;
-            align-items: center;
-            justify-content: center;
-            transition: all var(--transition-base);
-        }
+        .site-wrap { position: relative; z-index: 1; width: 100%; max-width: 100%; overflow-x: hidden; }
+        .container { width: min(1200px, calc(100% - 40px)); margin: 0 auto; }
+        @media (min-width: 768px) { .container { width: min(1200px, calc(100% - 64px)); } }
 
-        .mobile-nav {
-            display: none;
-            position: fixed;
-            top: 72px;
-            left: 0;
-            right: 0;
-            background: rgba(11, 17, 24, 0.98);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border-light);
-            padding: 0.5rem 1rem;
-            flex-direction: column;
-            gap: 0.25rem;
-            z-index: 999;
+        .header {
+            position: fixed; top: 0; left: 0; right: 0;
+            z-index: 1000; padding: 0.6rem 0;
+            background: rgba(10, 15, 30, 0.88);
+            backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            width: 100%;
         }
-
-        .mobile-nav.active {
-            display: flex;
+        .header.scrolled { background: rgba(10, 15, 30, 0.96); }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .brand {
+            display: flex; align-items: center; gap: 0.6rem;
+            font-family: 'Unbounded', sans-serif;
+            font-weight: 800; font-size: 0.9rem; color: white; text-decoration: none;
+            white-space: nowrap;
         }
+        .brand-icon {
+            width: 40px; height: 40px; border-radius: 14px;
+            background: linear-gradient(135deg, var(--blue), var(--violet));
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.7rem; font-weight: 900;
+            box-shadow: 0 0 30px rgba(125,211,255,0.3);
+            flex-shrink: 0;
+        }
+        .nav { display: flex; gap: 0.2rem; }
+        .nav a {
+            color: var(--text-secondary); font-size: 0.8rem; font-weight: 500;
+            padding: 0.4rem 0.8rem; border-radius: 50px;
+            transition: var(--transition-fast); text-decoration: none;
+            white-space: nowrap; position: relative;
+        }
+        .nav a::after {
+            content: ''; position: absolute;
+            bottom: 2px; left: 50%; transform: translateX(-50%);
+            width: 0; height: 2px;
+            background: linear-gradient(90deg, var(--blue), var(--cyan));
+            transition: width var(--transition-fast); border-radius: 2px;
+        }
+        .nav a:hover { color: white; }
+        .nav a:hover::after { width: 50%; }
+        .burger {
+            display: none; width: 44px; height: 44px;
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 14px;
+            background: rgba(255,255,255,0.04); color: white;
+            font-size: 1.2rem; align-items: center; justify-content: center;
+            cursor: pointer; flex-shrink: 0; transition: var(--transition-fast);
+        }
+        .burger:hover { background: rgba(255,255,255,0.08); }
 
+        .mobile-menu {
+            position: fixed; inset: 0; z-index: 999;
+            background: linear-gradient(135deg, rgba(10, 15, 30, 0.98), rgba(20, 30, 50, 0.98));
+            backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            transform: translateX(100%);
+            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            width: 100%; height: 100%;
+        }
+        .mobile-menu.open { transform: translateX(0); }
+        .mobile-close {
+            position: absolute; top: 20px; right: 20px;
+            font-size: 2rem; color: var(--text-muted);
+            background: none; border: 0; cursor: pointer;
+            width: 50px; height: 50px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            transition: var(--transition-fast);
+        }
+        .mobile-close:hover { background: rgba(255,255,255,0.06); color: white; }
+        .mobile-nav { display: flex; flex-direction: column; gap: 18px; text-align: center; width: 100%; max-width: 300px; padding: 0 20px; }
         .mobile-nav a {
-            padding: 0.875rem 1rem;
-            color: var(--text-main);
-            font-weight: 500;
-            border-radius: var(--radius-md);
-            transition: background var(--transition-base);
+            font-family: 'Unbounded', sans-serif;
+            font-size: 1.1rem; color: var(--text-secondary); text-decoration: none;
+            padding: 14px 20px; border-radius: 16px;
+            transition: var(--transition-fast);
+            opacity: 0; transform: translateY(20px);
         }
+        .mobile-menu.open .mobile-nav a { opacity: 1; transform: translateY(0); }
+        .mobile-menu.open .mobile-nav a:nth-child(1) { transition-delay: 0.05s; }
+        .mobile-menu.open .mobile-nav a:nth-child(2) { transition-delay: 0.1s; }
+        .mobile-menu.open .mobile-nav a:nth-child(3) { transition-delay: 0.15s; }
+        .mobile-menu.open .mobile-nav a:nth-child(4) { transition-delay: 0.2s; }
+        .mobile-menu.open .mobile-nav a:nth-child(5) { transition-delay: 0.25s; }
+        .mobile-nav a:hover { color: white; background: rgba(255,255,255,0.06); border-left: 3px solid var(--blue); }
 
-        /* ============================================
-                   HERO
-                ============================================ */
         .hero {
             min-height: 100svh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 6rem 0 4rem;
-            position: relative;
-            overflow: clip;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; padding: 8rem 0 4rem;
+            width: 100%; overflow: hidden;
         }
-
-        .hero-content {
-            text-align: center;
-            position: relative;
-            z-index: 5;
+        .hero-badge {
+            display: inline-block;
+            padding: 0.35rem 1.8rem; border-radius: 50px;
+            background: rgba(125,211,255,0.08);
+            border: 1px solid rgba(125,211,255,0.2);
+            font-size: 0.7rem; letter-spacing: 0.15em;
+            text-transform: uppercase; color: var(--blue);
+            margin-bottom: 2rem;
         }
-
-        .logo-container {
-            width: 160px;
-            height: 160px;
-            margin: 0 auto 2rem;
-            position: relative;
-            cursor: pointer;
-            transition: transform var(--transition-smooth);
-        }
-
-        .logo-orb {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 2px solid rgba(142, 216, 255, 0.3);
-            box-shadow: 0 0 60px rgba(142, 216, 255, 0.25);
-        }
-
-        .logo-orb img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
         .hero-title {
-            font-size: clamp(3rem, 8vw, 7rem);
-            font-weight: 800;
-            line-height: 0.9;
-            letter-spacing: -0.04em;
-            text-transform: uppercase;
-            margin-bottom: 0.2em;
-            background: linear-gradient(180deg, #ffffff 0%, #d9efff 40%, #8ed8ff 70%, #8b7dff 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
+            font-family: 'Unbounded', sans-serif;
+            font-size: clamp(2.8rem, 9vw, 6.5rem);
+            font-weight: 900; text-transform: uppercase; line-height: 1.1;
+            display: flex; justify-content: center; flex-wrap: nowrap;
+            white-space: nowrap; padding: 0 16px; max-width: 100%;
+            margin-bottom: 0.3em;
+        }
+        .title-letter {
+            display: inline-block;
+            background: linear-gradient(180deg, #fff 5%, #c8e5ff 40%, #7dd3ff 70%, #b4a4ff 100%);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            animation: letterFlyIn 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            flex-shrink: 1;
+        }
+        @keyframes letterFlyIn {
+            0% { opacity: 0; transform: translateY(-50px) rotateY(70deg) scale(0.4); filter: blur(3px); }
+            60% { opacity: 1; transform: translateY(6px) rotateY(-8deg) scale(1.06); filter: blur(0); }
+            80% { transform: translateY(-2px) rotateY(2deg) scale(0.97); }
+            100% { opacity: 1; transform: translateY(0) rotateY(0deg) scale(1); }
+        }
+        .hero-year {
+            font-family: 'Unbounded', sans-serif;
+            font-size: clamp(1.2rem, 2.5vw, 2rem);
+            font-weight: 700; color: var(--gold);
+            margin: 0.3rem 0 1.2rem;
+            text-shadow: 0 0 60px rgba(245,212,126,0.3);
+        }
+        .hero-desc {
+            color: var(--text-secondary);
+            max-width: 50ch; margin: 0 auto 2.5rem; font-size: 1.05rem;
+        }
+        .btn-group { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 0.85rem 2rem; border-radius: 50px;
+            font-weight: 600; font-size: 0.9rem; min-height: 48px;
+            transition: var(--transition-fast); text-decoration: none;
+            border: 0; cursor: pointer; white-space: nowrap;
+            position: relative; overflow: hidden;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #5ab8f0, #8b7df0, #b4a4ff);
+            background-size: 200% auto; color: white;
+            box-shadow: 0 8px 40px rgba(125,211,255,0.35);
+        }
+        .btn-primary::before {
+            content: ''; position: absolute; top: -50%; left: -60%;
+            width: 40%; height: 200%;
+            background: rgba(255,255,255,0.2);
+            transform: rotate(25deg);
+            animation: shineBtn 4s ease-in-out infinite;
+        }
+        @keyframes shineBtn {
+            0% { left: -60%; } 60% { left: 150%; } 100% { left: 150%; }
+        }
+        .btn-primary:hover { transform: translateY(-4px) scale(1.03); box-shadow: 0 15px 50px rgba(125,211,255,0.5); }
+        .btn-outline {
+            background: transparent; color: white;
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+        .btn-outline:hover { background: rgba(255,255,255,0.06); border-color: var(--blue); transform: translateY(-4px) scale(1.03); box-shadow: 0 10px 30px rgba(125,211,255,0.2); }
+
+        .section { padding: 5rem 0; width: 100%; }
+        .section-label {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 0.65rem; font-weight: 600; letter-spacing: 0.2em;
+            text-transform: uppercase; color: var(--gold);
+            display: block; margin-bottom: 0.3rem;
+        }
+        .section-title {
+            font-family: 'Unbounded', sans-serif;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 800; letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #fff 0%, #b8d5f0 100%);
+            -webkit-background-clip: text; background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .section-desc { color: var(--text-secondary); max-width: 55ch; margin-top: 0.2rem; }
 
-        .hero-subtitle {
-            font-size: clamp(1.1rem, 1.5vw, 1.3rem);
-            font-weight: 500;
-            color: var(--text-secondary);
-            max-width: 50ch;
-            margin: 0 auto 2rem;
-        }
-
-        .hero-year {
-            font-size: clamp(1.5rem, 3vw, 2.5rem);
-            font-weight: 500;
-            letter-spacing: 0.15em;
-            color: var(--accent-warm);
-            margin-bottom: 1.5rem;
-        }
-
-        /* ============================================
-                   КНОПКИ
-                ============================================ */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            padding: 0.875rem 1.75rem;
-            border-radius: var(--radius-full);
-            font-family: var(--font-body);
-            font-size: 0.9rem;
-            font-weight: 600;
-            line-height: 1;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all var(--transition-base);
-            min-height: 48px;
-            white-space: nowrap;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #4a90e2 0%, #6f7cff 100%);
-            color: #ffffff;
-            box-shadow: var(--shadow-btn);
-        }
-
-        .btn-primary:hover {
-            box-shadow: 0 12px 40px rgba(142, 216, 255, 0.4);
-            transform: translateY(-2px);
-            color: #ffffff;
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--text-main);
-            border: 1px solid var(--border-light);
-        }
-
-        .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: var(--accent-blue);
-            transform: translateY(-2px);
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 0.75rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        /* ============================================
-                   СЕКЦИИ
-                ============================================ */
-        .section {
-            padding: 5rem 0;
-            position: relative;
-        }
-
-        .section-header {
-            margin-bottom: 3rem;
-        }
-
-        .section-number {
-            font-family: var(--font-display);
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 0.2em;
-            color: var(--accent-warm);
-            text-transform: uppercase;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .section-title {
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            margin-bottom: 1rem;
-        }
-
-        .section-subtitle {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 55ch;
-        }
-
-        /* ============================================
-                   КАРТОЧКИ
-                ============================================ */
-        .glass-panel {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025));
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
+        .glass {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             padding: 2rem;
-            box-shadow: var(--shadow-card);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
+            transition: var(--transition-fast);
+            width: 100%;
         }
+        .glass:hover { border-color: rgba(125,211,255,0.15); transform: translateY(-2px); }
 
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1rem;
+        .tabs {
+            display: inline-flex;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            padding: 5px; border-radius: 16px;
+            gap: 3px; flex-wrap: wrap; margin-bottom: 2rem;
+            max-width: 100%;
         }
+        .tab {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 0.7rem; font-weight: 600;
+            padding: 0.5rem 1.2rem; color: var(--text-secondary);
+            border-radius: 12px; background: transparent;
+            transition: var(--transition-fast); cursor: pointer; border: 0;
+            white-space: nowrap;
+        }
+        .tab:hover { color: white; background: rgba(255,255,255,0.05); transform: translateY(-1px); }
+        .tab.active {
+            background: linear-gradient(135deg, var(--blue), var(--cyan));
+            color: #0a0f1e;
+            box-shadow: 0 4px 20px rgba(125,211,255,0.3);
+            transform: translateY(-1px);
+        }
+        .tab-content { display: none; animation: fadeUp 0.45s ease; width: 100%; }
+        .tab-content.active { display: block; }
+        @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
 
-        .feature-card {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius-lg);
-            padding: 1.75rem;
-            box-shadow: var(--shadow-card);
-            transition: all var(--transition-base);
+        #history {
+            border-radius: var(--radius);
+            padding: 2rem;
             position: relative;
             overflow: hidden;
+            width: 100%;
         }
-
-        .feature-card:hover {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
-            transform: translateY(-4px);
+        #history.theme-2025::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background: linear-gradient(135deg, rgba(255,154,77,0.2), rgba(255,154,77,0.05), rgba(30,20,10,0.1), rgba(255,154,77,0.15));
+            background-size: 300% 300%;
+            animation: gradientMove 8s ease-in-out infinite;
         }
-
-        .feature-icon {
-            font-size: 1.75rem;
-            margin-bottom: 0.75rem;
-            display: block;
+        #history.theme-2026::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background: linear-gradient(135deg, rgba(125,211,255,0.2), rgba(125,211,255,0.05), rgba(10,25,40,0.1), rgba(125,211,255,0.15));
+            background-size: 300% 300%;
+            animation: gradientMove 8s ease-in-out infinite;
         }
-
-        .feature-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+        #history.theme-2027::before {
+            content: '';
+            position: absolute; inset: 0; z-index: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(245,212,126,0.12) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(125,211,255,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(180,164,255,0.1) 0%, transparent 60%),
+                linear-gradient(135deg, rgba(245,212,126,0.08), rgba(125,211,255,0.06), rgba(180,164,255,0.08));
+            background-size: 300% 300%;
+            animation: gradientMove 6s ease-in-out infinite;
         }
-
-        .feature-text {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            line-height: 1.55;
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
+        #history .container { position: relative; z-index: 1; }
 
-        /* ============================================
-                   ДАТА
-                ============================================ */
-        .date-display {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1.25rem;
-            flex-wrap: wrap;
-            margin: 1.5rem 0;
+        .history-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius);
+            padding: 2rem;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            width: 100%;
+            transition: var(--transition-fast);
         }
-
-        .date-part {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+        .history-card:hover { transform: translateY(-3px); border-color: rgba(125,211,255,0.2); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
+        .history-card-title {
+            font-size: 1.6rem;
             font-weight: 700;
-            color: var(--accent-blue);
-            text-shadow: 0 0 40px rgba(142, 216, 255, 0.3);
+            margin-bottom: 0.8rem;
+            display: flex; align-items: center;
+            gap: 0.8rem; flex-wrap: wrap;
         }
-
-        .date-note {
-            font-size: 0.9rem;
+        .year-badge {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 54px; height: 54px; border-radius: 50%;
+            font-size: 1.1rem; font-weight: 800; flex-shrink: 0;
+        }
+        .history-card-desc {
             color: var(--text-secondary);
+            font-size: 1rem; max-width: 65ch;
+        }
+        .history-stats {
+            display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1.2rem;
+        }
+        .history-stat {
             text-align: center;
-            max-width: 45ch;
-            margin: 0 auto;
+            padding: 1rem 1.2rem;
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            flex: 1; min-width: 100px;
+            transition: var(--transition-fast);
+        }
+        .history-stat:hover { transform: translateY(-2px); background: rgba(255,255,255,0.07); }
+        .history-stat-value {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 1.3rem; font-weight: 700;
+            display: block; margin-bottom: 0.2rem;
+        }
+        .history-stat-label {
+            font-size: 0.65rem; color: var(--text-muted);
+            text-transform: uppercase; letter-spacing: 0.04em;
         }
 
-        /* ============================================
-                   СООБЩЕНИЕ
-                ============================================ */
-        .message-text {
-            font-size: 1rem;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 1rem;
-            max-width: 65ch;
-        }
-
-        .message-text strong {
-            color: var(--text-main);
-            font-weight: 600;
-        }
-
-        .message-signature {
-            font-style: italic;
-            color: var(--text-muted);
-            border-top: 1px solid var(--border-light);
-            padding-top: 1.25rem;
-            margin-top: 1.25rem;
-        }
-
-        /* ============================================
-                   CTA
-                ============================================ */
-        .cta-section {
-            text-align: center;
-            padding: 5rem 0;
-        }
-
-        .cta-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 1rem;
-        }
-
-        .cta-text {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 50ch;
-            margin: 0 auto 1.5rem;
-        }
-
-        /* ============================================
-                   FOOTER
-                ============================================ */
-        .site-footer {
-            padding: 2rem 0;
-            padding-bottom: max(2rem, env(safe-area-inset-bottom));
-            border-top: 1px solid var(--border-light);
-            background: rgba(11, 17, 24, 0.9);
-        }
-
-        .footer-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        .winners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 1rem;
+            width: 100%;
+        }
+        .winner-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            padding: 1.2rem 0.8rem;
+            text-align: center;
+            transition: var(--transition-fast);
+            position: relative;
+        }
+        .winner-card:hover {
+            transform: translateY(-8px) rotate(-1deg) scale(1.03);
+            border-color: rgba(125,211,255,0.25);
+            background: rgba(255,255,255,0.07);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 30px rgba(125,211,255,0.1);
+        }
+        .winner-card.gold {
+            border-color: rgba(245,212,126,0.5);
+            box-shadow: 0 0 40px rgba(245,212,126,0.15);
+            background: linear-gradient(145deg, rgba(245,212,126,0.12), rgba(255,255,255,0.03));
+        }
+        .winner-card.gold:hover {
+            border-color: rgba(245,212,126,0.8);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 60px rgba(245,212,126,0.3);
+            transform: translateY(-8px) rotate(-1deg) scale(1.03);
+        }
+        .winner-card.queen {
+            border-color: rgba(255,158,203,0.5);
+            box-shadow: 0 0 40px rgba(255,158,203,0.15);
+            background: linear-gradient(145deg, rgba(255,158,203,0.12), rgba(255,255,255,0.03));
+        }
+        .winner-card.queen:hover {
+            border-color: rgba(255,158,203,0.8);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 60px rgba(255,158,203,0.3);
+            transform: translateY(-8px) rotate(-1deg) scale(1.03);
+        }
+        .winner-badge {
+            font-size: 0.6rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.06em;
+            color: var(--blue);
+        }
+        .gold .winner-badge { color: var(--gold); font-weight: 700; }
+        .queen .winner-badge { color: var(--rose); font-weight: 700; }
+        .winner-name {
+            font-family: 'Unbounded', sans-serif;
+            font-weight: 700; font-size: 0.85rem;
+            cursor: pointer; transition: var(--transition-fast);
+            margin-top: 0.2rem;
+        }
+        .winner-name:hover { color: var(--cyan); transform: scale(1.05); }
+
+        .timer {
+            display: flex; gap: 10px; justify-content: center;
+            flex-wrap: wrap; margin: 2rem 0;
+        }
+        .timer-item {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            padding: 0.8rem 1.2rem;
+            min-width: 72px; text-align: center;
+            transition: var(--transition-fast);
+        }
+        .timer-item:hover { border-color: rgba(110,231,224,0.2); box-shadow: 0 0 30px rgba(110,231,224,0.1); transform: translateY(-3px); }
+        .timer-item span {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 2rem; font-weight: 800;
+            color: var(--cyan); display: block; line-height: 1.2;
+        }
+        .timer-item label {
+            font-size: 0.55rem; text-transform: uppercase;
+            color: var(--text-muted); letter-spacing: 0.05em;
+        }
+        .timer-sep {
+            font-size: 1.8rem; color: var(--cyan);
+            opacity: 0.3; display: flex; align-items: center;
         }
 
-        .footer-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-family: var(--font-display);
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.2rem; margin: 2rem 0;
+            width: 100%;
+        }
+        .program-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: var(--radius);
+            padding: 1.8rem 1rem;
+            text-align: center;
+            transition: var(--transition-fast);
+        }
+        .program-card:hover { transform: translateY(-6px) rotate(0.5deg) scale(1.02); border-color: rgba(125,211,255,0.15); background: rgba(255,255,255,0.06); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
+        .program-icon { font-size: 2.4rem; display: block; margin-bottom: 0.5rem; }
+        .program-card h3 { font-family: 'Unbounded', sans-serif; font-size: 0.85rem; margin-bottom: 0.2rem; }
+        .program-card p { font-size: 0.8rem; color: var(--text-secondary); }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+            width: 100%;
+        }
+        .game-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+        .game-card:hover {
+            transform: translateY(-5px) rotate(0.5deg) scale(1.02);
+            border-color: rgba(125,211,255,0.2);
+            background: rgba(255,255,255,0.06);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        .game-emoji { font-size: 2.5rem; display: block; margin-bottom: 0.5rem; }
+        .game-title { font-family: 'Unbounded', sans-serif; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.2rem; }
+        .game-desc { font-size: 0.75rem; color: var(--text-secondary); }
+
+        .popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.75);
+            z-index: 10000;
+            display: none;
+            align-items: center; justify-content: center;
+            padding: 20px;
+        }
+        .popup-overlay.active { display: flex; }
+        .popup-card {
+            background: rgba(15,30,60,0.97);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 24px;
+            padding: 24px 20px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            animation: fadeUp 0.3s ease;
+        }
+        .popup-title {
+            font-family: 'Unbounded', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 16px;
+            color: white;
+        }
+        .popup-close {
+            display: block;
+            margin: 16px auto 0;
+            font-family: 'Inter', sans-serif;
             font-weight: 600;
+            font-size: 0.85rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            width: fit-content;
+        }
+        .popup-close:hover { background: rgba(255,255,255,0.15); }
+
+        .quiz-options {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+        .quiz-option {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 12px 16px;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            text-align: left;
             font-size: 0.9rem;
         }
-
-        .footer-links {
-            display: flex;
-            gap: 1.25rem;
-            flex-wrap: wrap;
+        .quiz-option:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(125,211,255,0.3);
+            transform: translateX(4px);
         }
-
-        .footer-links a {
-            color: var(--text-muted);
-            font-size: 0.82rem;
+        .quiz-option.correct {
+            background: rgba(50,200,100,0.25) !important;
+            border-color: rgba(50,200,100,0.5) !important;
         }
-
-        .footer-copyright {
-            font-size: 0.78rem;
-            color: var(--text-muted);
+        .quiz-option.wrong {
+            background: rgba(200,60,60,0.25) !important;
+            border-color: rgba(200,60,60,0.4) !important;
         }
-
-        /* ============================================
-                   PREFERS-REDUCED-MOTION
-                ============================================ */
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
+        .quiz-result {
+            margin-top: 12px;
+            font-weight: 700;
+            text-align: center;
+            font-size: 0.9rem;
         }
-
-        /* ============================================
-                   АДАПТИВНОСТЬ
-                ============================================ */
-        @media (min-width: 768px) {
-            .container {
-                width: min(1320px, calc(100% - 64px));
-            }
+        .quiz-retry {
+            display: none;
+            margin: 12px auto 0;
+            background: rgba(245,212,126,0.1);
+            border: 1px solid rgba(245,212,126,0.3);
+            color: var(--gold);
+            padding: 8px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition-fast);
         }
+        .quiz-retry:hover { background: rgba(245,212,126,0.2); }
 
-        @media (min-width: 1440px) {
-            .container {
-                width: min(1320px, calc(100% - 96px));
-            }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 1.2rem;
+            width: 100%;
         }
+        .contact-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: var(--radius);
+            padding: 1.8rem 1.2rem;
+            transition: var(--transition-fast);
+        }
+        .contact-card:hover { transform: translateY(-5px) scale(1.02); border-color: rgba(125,211,255,0.15); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
+        .contact-card h3 { font-family: 'Unbounded', sans-serif; font-size: 0.85rem; }
+        .contact-card p { color: var(--text-secondary); font-size: 0.8rem; margin: 0.2rem 0 0.4rem; }
+        .contact-card a { color: var(--blue); text-decoration: none; font-weight: 500; }
+
+        .footer {
+            padding: 2.5rem 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: 2rem;
+            width: 100%;
+        }
+        .footer-inner {
+            display: flex; align-items: center; justify-content: space-between;
+            flex-wrap: wrap; gap: 1rem;
+        }
+        .footer-brand { font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 0.9rem; color: var(--text-primary); }
+        .footer-links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-muted); font-size: 0.8rem; text-decoration: none; transition: var(--transition-fast); }
+        .footer-links a:hover { color: var(--blue); transform: translateY(-1px); }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
+
+        .scroll-top {
+            position: fixed; bottom: 28px; right: 28px;
+            width: 54px; height: 54px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--blue), var(--violet));
+            color: white; font-size: 1.4rem; border: 0;
+            box-shadow: 0 8px 40px rgba(125,211,255,0.3);
+            opacity: 0; visibility: hidden;
+            transition: var(--transition-fast); z-index: 998; cursor: pointer;
+        }
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 50px rgba(125,211,255,0.5); }
+
+        .reveal {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
 
         @media (max-width: 768px) {
-            html {
-                scroll-padding-top: 76px;
-            }
-
-            .main-nav {
-                display: none;
-            }
-
-            .mobile-menu-btn {
-                display: flex;
-            }
-
-            .hero {
-                padding: 5rem 0 3rem;
-            }
-
-            .logo-container {
-                width: 120px;
-                height: 120px;
-            }
-
-            .glass-panel {
-                padding: 1.5rem;
-            }
-
-            .section {
-                padding: 3.5rem 0;
-            }
-
-            .cards-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-inner {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 280px;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-            }
+            .nav { display: none; }
+            .burger { display: flex; }
+            .hero { padding: 6rem 0 3rem; }
+            .hero-title { font-size: clamp(2rem, 7vw, 3.5rem); }
+            .section { padding: 3rem 0; }
+            .winners-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+            .history-card-title { font-size: 1.2rem; }
+            .history-stats { flex-direction: column; }
+            .history-stat { min-width: unset; }
+            .btn-group { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 280px; }
+            .timer-item { min-width: 60px; padding: 0.5rem 0.8rem; }
+            .timer-item span { font-size: 1.5rem; }
+            .timer-sep { font-size: 1.2rem; }
+            .program-grid { grid-template-columns: 1fr 1fr; }
+            .games-grid { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .glass { padding: 1.5rem; }
+            .history-card { padding: 1.5rem; }
+            .tabs { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; }
+            .tab { flex-shrink: 0; }
         }
 
         @media (max-width: 480px) {
-            .hero-title {
-                font-size: clamp(2.5rem, 10vw, 3.5rem);
-            }
-
-            .logo-container {
-                width: 100px;
-                height: 100px;
-            }
+            .container { width: calc(100% - 32px); }
+            .winners-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+            .winner-name { font-size: 0.7rem; }
+            .winner-badge { font-size: 0.5rem; }
+            .program-grid { grid-template-columns: 1fr 1fr; }
+            .footer-inner { flex-direction: column; text-align: center; }
+            .footer-links { justify-content: center; }
         }
     </style>
 </head>
 <body>
-    <!-- Шапка -->
-    <header class="site-header" id="site-header" role="banner">
+
+<div class="bg-glow">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+</div>
+
+<div class="stars-container" id="starsContainer"></div>
+
+<div class="site-wrap">
+    <header class="header" id="header">
         <div class="container header-inner">
-            <a href="#" class="brand-logo" aria-label="ShineAwards 2027 — на главную">
-                <span class="brand-icon">
-                    <img src="https://i.ibb.co/Gfpx4nYh/photo-2026-09-04-21-37-34.jpg" alt="Логотип ShineAwards" loading="lazy" width="40" height="40">
-                </span>
+            <a href="#" class="brand">
+                <span class="brand-icon">✦</span>
                 <span>ShineAwards</span>
             </a>
-            
-            <nav class="main-nav" role="navigation" aria-label="Основная навигация">
-                <a href="#about">О событии</a>
-                <a href="#date">Дата</a>
-                <a href="#features">Что ждёт</a>
-                <a href="#message">Обращение</a>
-                <a href="#follow">Контакты</a>
+            <nav class="nav">
+                <a href="#about">О премии</a>
+                <a href="#history">История</a>
+                <a href="#winners">Зал славы</a>
+                <a href="#year2027">2027</a>
+                <a href="#contacts">Контакты</a>
             </nav>
-            
-            <button class="mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Открыть меню" aria-expanded="false">
-                ☰
-            </button>
+            <button class="burger" id="burgerToggle" aria-label="Меню">☰</button>
         </div>
-        
-        <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Мобильная навигация">
-            <a href="#about">О событии</a>
-            <a href="#date">Дата</a>
-            <a href="#features">Что ждёт</a>
-            <a href="#message">Обращение</a>
-            <a href="#follow">Контакты</a>
-        </nav>
     </header>
 
-    <!-- Основной контент -->
-    <div class="page-content">
-        <main role="main">
-            <!-- HERO -->
-            <section class="hero" aria-label="Главный экран">
-                <div class="container hero-content">
-                    <span class="shine-badge">Главное событие WMine</span>
-                    
-                    <div class="logo-container" role="img" aria-label="Логотип Shine Awards 2027">
-                        <div class="logo-orb">
-                            <img src="https://i.ibb.co/Gfpx4nYh/photo-2026-09-04-21-37-34.jpg" alt="Shine Awards 2027" width="160" height="160">
-                        </div>
-                    </div>
-                    
-                    <h1 class="hero-title">Shine Awards</h1>
-                    <div class="hero-year">2027</div>
-                    <p class="hero-subtitle">Главное событие года для всего сообщества WMine</p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#about" class="btn btn-primary">Узнать больше</a>
-                        <a href="#follow" class="btn btn-outline">Следить за новостями</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- О СОБЫТИИ -->
-            <section class="section" id="about" aria-labelledby="about-title">
-                <div class="container">
-                    <div class="section-header">
-                        <span class="section-number">01 / О событии</span>
-                        <h2 class="section-title" id="about-title">Скоро начнётся</h2>
-                    </div>
-                    
-                    <div class="glass-panel">
-                        <p class="message-text">
-                            Дорогие игроки WMine! С радостью сообщаем, что подготовка к главному событию 
-                            WMine этого года — ShineAwards 2027 — уже началась! 
-                            Мы не раскрываем все карты сразу, но вот чем готовы поделиться сегодня.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ДАТА -->
-            <section class="section" id="date" aria-labelledby="date-title">
-                <div class="container">
-                    <div class="section-header">
-                        <span class="section-number">02 / Дата</span>
-                        <h2 class="section-title" id="date-title">Дата проведения</h2>
-                    </div>
-                    
-                    <div class="date-display">
-                        <span class="date-part">??</span>
-                        <span>·</span>
-                        <span class="date-part">01</span>
-                        <span>·</span>
-                        <span class="date-part">2027</span>
-                    </div>
-                    <p class="date-note">
-                        Точные даты мы объявим ближе к Новому году, так что следите за новостями!
-                    </p>
-                </div>
-            </section>
-
-            <!-- ЧТО НАС ЖДЁТ -->
-            <section class="section" id="features" aria-labelledby="features-title">
-                <div class="container">
-                    <div class="section-header">
-                        <span class="section-number">03 / Что нас ждёт</span>
-                        <h2 class="section-title" id="features-title">Программа</h2>
-                    </div>
-                    
-                    <div class="cards-grid">
-                        <div class="feature-card">
-                            <span class="feature-icon" aria-hidden="true">🏆</span>
-                            <h3 class="feature-title">30 номинаций</h3>
-                            <p class="feature-text">Лучшие игроки, проекты и моменты года будут отмечены.</p>
-                        </div>
-                        
-                        <div class="feature-card">
-                            <span class="feature-icon" aria-hidden="true">🔨</span>
-                            <h3 class="feature-title">Аукцион</h3>
-                            <p class="feature-text">Аукцион донатных предметов и, возможно, уникальных привилегий.</p>
-                        </div>
-                        
-                        <div class="feature-card">
-                            <span class="feature-icon" aria-hidden="true">🪞</span>
-                            <h3 class="feature-title">Шоу частиц</h3>
-                            <p class="feature-text">Невероятные построения масштабных фигур прямо в воздухе.</p>
-                        </div>
-                        
-                        <div class="feature-card">
-                            <span class="feature-icon" aria-hidden="true">🎁</span>
-                            <h3 class="feature-title">Подарки для всех</h3>
-                            <p class="feature-text">Призы получат не только победители, но и зрители на мероприятии.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ОБРАЩЕНИЕ -->
-            <section class="section" id="message" aria-labelledby="message-title">
-                <div class="container">
-                    <div class="glass-panel">
-                        <span class="section-number">04 / Обращение</span>
-                        <h2 class="section-title" id="message-title" style="font-size: 1.75rem; margin-bottom: 1.5rem;">К сообществу</h2>
-                        
-                        <p class="message-text"><strong>Дорогие игроки WMine!</strong></p>
-                        
-                        <p class="message-text">
-                            В ближайшее время мы начнём делиться первыми спойлерами. 
-                            Включайте уведомления, чтобы ничего не пропустить! 🤫
-                        </p>
-                        
-                        <p class="message-signature">
-                            Мы создаём этот праздник, чтобы каждый почувствовал себя частью чего-то большого. 
-                            Это не просто премия — это наша общая история. 
-                            Момент, который останется с нами навсегда 🥰
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- КОНТАКТЫ -->
-            <section class="cta-section" id="follow" aria-labelledby="follow-title">
-                <div class="container">
-                    <span class="shine-badge" style="margin-bottom: 1rem;">Не пропусти</span>
-                    <h2 class="cta-title" id="follow-title">ShineAwards 2027</h2>
-                    <p class="cta-text">Следи за новостями WMine, чтобы первым узнать точную дату, номинации и первые спойлеры.</p>
-                    
-                    <a href="https://t.me/shine_awards" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; padding: 1rem 2rem;">
-                        Подписаться на канал
-                    </a>
-                </div>
-            </section>
-        </main>
-
-        <!-- Подвал -->
-        <footer class="site-footer" role="contentinfo">
-            <div class="container footer-inner">
-                <div class="footer-brand">
-                    <span>ShineAwards 2027</span>
-                </div>
-                
-                <nav class="footer-links" aria-label="Навигация в подвале">
-                    <a href="#about">О событии</a>
-                    <a href="#date">Дата</a>
-                    <a href="#features">Программа</a>
-                    <a href="https://t.me/shine_awards" target="_blank" rel="noopener noreferrer">Telegram</a>
-                    <a href="https://t.me/shineaward_bot" target="_blank" rel="noopener noreferrer">Поддержка</a>
-                    <a href="https://t.me/notworkch" target="_blank" rel="noopener noreferrer">Основатель</a>
-                </nav>
-                
-                <div class="footer-copyright">
-                    © IwwiTeam, 2025-2027
-                </div>
-            </div>
-        </footer>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="burgerClose" aria-label="Закрыть">✕</button>
+        <nav class="mobile-nav">
+            <a href="#about">О премии</a>
+            <a href="#history">История</a>
+            <a href="#winners">Зал славы</a>
+            <a href="#year2027">2027</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
     </div>
 
-    <script>
-        // Мобильное меню
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileNav = document.getElementById('mobile-nav');
-        
-        if (mobileMenuBtn && mobileNav) {
-            mobileMenuBtn.addEventListener('click', () => {
-                const isOpen = mobileNav.classList.toggle('active');
-                mobileMenuBtn.setAttribute('aria-expanded', isOpen);
-                mobileMenuBtn.textContent = isOpen ? '✕' : '☰';
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="hero-badge">Ежегодная премия WMine</span>
+                <h1 class="hero-title" id="heroTitle"></h1>
+                <p class="hero-year">6 января 2027</p>
+                <p class="hero-desc">Премия, которая отмечает лучших игроков, постройки и моменты года в сообществе WMine.</p>
+                <div class="btn-group">
+                    <a href="#year2027" class="btn btn-primary">К премии 2027</a>
+                    <a href="#history" class="btn btn-outline">История</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-label">01 / О премии</span>
+                    <h2 class="section-title">Что такое ShineAwards</h2>
+                </div>
+                <div class="glass reveal" style="margin-top:1rem;">
+                    <p style="color: var(--text-secondary); max-width: 70ch; margin-bottom:0.5rem; font-size:1.05rem;">
+                        ShineAwards — это ежегодная премия сообщества WMine. Здесь отмечаются лучшие игроки, кланы, постройки, события и моменты, которые сделали сервер ярче за прошедший год.
+                    </p>
+                    <p style="color: var(--text-secondary); max-width: 70ch; margin-bottom:0.5rem;">
+                        Премия создаётся командой <strong style="color:white;">IwwiTeam</strong> при поддержке администрации WMine.
+                    </p>
+                    <p style="color: var(--text-muted); max-width: 70ch; font-size:0.9rem;">
+                        В связи с переходом на новый проект возможны небольшие организационные сложности, 
+                        однако команда ShineAwards и WMine приложит все усилия, чтобы премия прошла гладко и идеально.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="history">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-label">02 / История</span>
+                    <h2 class="section-title">История премий</h2>
+                </div>
+                <div class="tabs reveal">
+                    <button class="tab active" data-tab="history-placeholder" data-theme="">Выберите год</button>
+                    <button class="tab" data-tab="history-2025" data-theme="2025">2025</button>
+                    <button class="tab" data-tab="history-2026" data-theme="2026">2026</button>
+                    <button class="tab" data-tab="history-2027" data-theme="2027">2027</button>
+                </div>
+                <div class="tab-content active" id="history-placeholder">
+                    <div style="text-align:center;padding:3rem 1rem;color:var(--text-muted);">
+                        <span style="font-size:3rem;display:block;margin-bottom:0.5rem;">✦</span>
+                        Выберите год, чтобы увидеть историю премии
+                    </div>
+                </div>
+                <div class="tab-content" id="history-2025">
+                    <div class="history-card">
+                        <div class="history-card-title">
+                            <span class="year-badge" style="background:rgba(255,154,77,0.15);color:var(--orange);">25</span>
+                            Shine 2025 — первый старт
+                        </div>
+                        <p class="history-card-desc">
+                            Первая премия ShineAwards прошла 13 декабря 2025 года на IronMine. 
+                            Были представлены 14 номинаций, проведено анонимное голосование, 
+                            а победители получили эксклюзивные префиксы и денежные призы.
+                        </p>
+                        <div class="history-stats">
+                            <div class="history-stat">
+                                <span class="history-stat-value" style="color:var(--orange);">14</span>
+                                <span class="history-stat-label">Номинаций</span>
+                            </div>
+                            <div class="history-stat">
+                                <span class="history-stat-value" style="color:var(--gold);">13 декабря</span>
+                                <span class="history-stat-label">Дата церемонии</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="history-2026">
+                    <div class="history-card">
+                        <div class="history-card-title">
+                            <span class="year-badge" style="background:rgba(125,211,255,0.15);color:var(--blue);">26</span>
+                            ShineAwards 2026 — рост и прогресс
+                        </div>
+                        <p class="history-card-desc">
+                            Вторая премия прошла 21 июня 2026 года. Количество номинаций выросло до 20, 
+                            был проведён конкурс на лучшую постройку, а церемонию посетило рекордное 
+                            количество игроков — 100 человек онлайн.
+                        </p>
+                        <div class="history-stats">
+                            <div class="history-stat">
+                                <span class="history-stat-value" style="color:var(--blue);">20</span>
+                                <span class="history-stat-label">Номинаций</span>
+                            </div>
+                            <div class="history-stat">
+                                <span class="history-stat-value" style="color:var(--gold);">100+</span>
+                                <span class="history-stat-label">Онлайн игроков</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="history-2027">
+                    <div class="history-card">
+                        <div class="history-card-title">
+                            <span class="year-badge" style="background:rgba(245,212,126,0.15);color:var(--gold);">27</span>
+                            ShineAwards 2027 — новый уровень
+                        </div>
+                        <p class="history-card-desc">
+                            Третья премия пройдёт 6 января 2027 года. Нас ждёт 25 номинаций, 
+                            аукцион донатных предметов, шоу частиц с масштабными построениями 
+                            прямо в воздухе и подарки для всех зрителей.
+                        </p>
+                        <p class="history-card-desc" style="margin-top: 0.8rem;">
+                            Некоторые старые номинации будут убраны, но при этом добавлено 8 новых. 
+                            В связи с переходом на новый проект возможны небольшие организационные 
+                            сложности, однако команда ShineAwards и WMine приложит все усилия, 
+                            чтобы премия прошла гладко и идеально.
+                        </p>
+                        <div class="history-stats">
+                            <div class="history-stat">
+                                <span class="history-stat-value" style="color:var(--gold);">25</span>
+                                <span class="history-stat-label">Номинаций</span>
+                            </div>
+                            <div class="history-stat">
+                                <span class="history-stat-value" style="color:var(--blue);">8 новых</span>
+                                <span class="history-stat-label">Добавлено</span>
+                            </div>
+                            <div class="history-stat">
+                                <span class="history-stat-value" style="color:var(--orange);">Переход</span>
+                                <span class="history-stat-label">На новый проект</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="winners">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-label">03 / Победители</span>
+                    <h2 class="section-title">Зал славы</h2>
+                </div>
+                <div class="tabs reveal">
+                    <button class="tab active" data-tab="winners-placeholder">Выберите год</button>
+                    <button class="tab" data-tab="winners-2025">2025</button>
+                    <button class="tab" data-tab="winners-2026">2026</button>
+                </div>
+                <div class="tab-content active" id="winners-placeholder">
+                    <div style="text-align:center;padding:3rem 1rem;color:var(--text-muted);">
+                        <span style="font-size:3rem;display:block;margin-bottom:0.5rem;">✦</span>
+                        Выберите год, чтобы увидеть победителей
+                    </div>
+                </div>
+                <div class="tab-content" id="winners-2025">
+                    <div class="winners-grid">
+                        <div class="winner-card gold"><span class="winner-badge">Shine-King</span><div class="winner-name">iwwi</div></div>
+                        <div class="winner-card queen"><span class="winner-badge">Shine-Queen</span><div class="winner-name">epsportz</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Clan</span><div class="winner-name">anblade</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-PVP</span><div class="winner-name">loon1xx</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-SMS</span><div class="winner-name">mi9056</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Popular</span><div class="winner-name">mopsikzloss</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Telegram</span><div class="winner-name">@iwwichannel</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Year</span><div class="winner-name">stepfatherbtw</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-ЧС</span><div class="winner-name">noxtx</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Base</span><div class="winner-name">wendiks</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Top</span><div class="winner-name">susboy</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Sweet</span><div class="winner-name">epsportz</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Dollar</span><div class="winner-name">iwwi</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Friend</span><div class="winner-name">sans</div></div>
+                    </div>
+                </div>
+                <div class="tab-content" id="winners-2026">
+                    <div class="winners-grid">
+                        <div class="winner-card gold"><span class="winner-badge">Shine-King</span><div class="winner-name">iwwi</div></div>
+                        <div class="winner-card queen"><span class="winner-badge">Shine-Queen</span><div class="winner-name">qwenty</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Clan</span><div class="winner-name">anblade</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-PVP</span><div class="winner-name">loon1xx</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-SMS</span><div class="winner-name">mi9056</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Popular</span><div class="winner-name">mopsikzloss</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Telegram</span><div class="winner-name">@notworkch</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Year</span><div class="winner-name">anonimys2</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-ЧС</span><div class="winner-name">zxcdeadchik</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Base</span><div class="winner-name">mrfloyka</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Top</span><div class="winner-name">susboy</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Sweet</span><div class="winner-name">wendiks</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Dollar</span><div class="winner-name">leare1</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Friend</span><div class="winner-name">simfers4674</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Farmer</span><div class="winner-name">kevil444</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Mech</span><div class="winner-name">cetcup_top</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Helper</span><div class="winner-name">karma1</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Pair</span><div class="winner-name">karma1 + leare1</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Camper</span><div class="winner-name">mikcer</div></div>
+                        <div class="winner-card"><span class="winner-badge">Shine-Ghost</span><div class="winner-name">session_mcpe</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="year2027">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-label">04 / 2027</span>
+                    <h2 class="section-title">ShineAwards 2027</h2>
+                    <p class="section-desc">Церемония пройдёт 6 января 2027 года на WMine.</p>
+                </div>
+                <div class="timer reveal">
+                    <div class="timer-item"><span id="t-days">0</span><label>Дней</label></div>
+                    <span class="timer-sep">:</span>
+                    <div class="timer-item"><span id="t-hours">0</span><label>Часов</label></div>
+                    <span class="timer-sep">:</span>
+                    <div class="timer-item"><span id="t-minutes">0</span><label>Минут</label></div>
+                    <span class="timer-sep">:</span>
+                    <div class="timer-item"><span id="t-seconds">0</span><label>Секунд</label></div>
+                </div>
+                <div class="program-grid reveal">
+                    <div class="program-card"><span class="program-icon">◈</span><h3>25 номинаций</h3><p>Лучшие игроки, проекты и моменты года.</p></div>
+                    <div class="program-card"><span class="program-icon">⚒</span><h3>Аукцион</h3><p>Донатные предметы и уникальные привилегии.</p></div>
+                    <div class="program-card"><span class="program-icon">✧</span><h3>Шоу частиц</h3><p>Масштабные фигуры прямо в воздухе.</p></div>
+                    <div class="program-card"><span class="program-icon">❖</span><h3>Подарки для всех</h3><p>Призы получат не только победители.</p></div>
+                </div>
+                
+                <div class="reveal" style="margin-top: 2rem;">
+                    <h3 style="font-family: 'Unbounded', sans-serif; font-size: 1.2rem; margin-bottom: 1rem;">🎮 Развлечения</h3>
+                    <div class="games-grid">
+                        <div class="game-card" id="openQuiz">
+                            <span class="game-emoji">🧠</span>
+                            <div class="game-title">Угадай номинацию</div>
+                            <div class="game-desc">По описанию угадай, о ком речь</div>
+                        </div>
+                        <div class="game-card" id="openTest">
+                            <span class="game-emoji">🔮</span>
+                            <div class="game-title">Кто ты на ShineAwards?</div>
+                            <div class="game-desc">Пройди тест и узнай</div>
+                        </div>
+                        <div class="game-card" id="randomNominee">
+                            <span class="game-emoji">🎲</span>
+                            <div class="game-title">Случайная номинация</div>
+                            <div class="game-desc">Подсветит рандомную</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align:center;margin-top:2rem;" class="reveal">
+                    <a href="https://t.me/shine_awards" class="btn btn-primary" target="_blank">Подписаться на канал</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contacts">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-label">05 / Контакты</span>
+                    <h2 class="section-title">Связь с нами</h2>
+                </div>
+                <div class="contact-grid reveal">
+                    <div class="contact-card"><h3>Telegram-канал</h3><p>Официальный канал ShineAwards.</p><a href="https://t.me/shine_awards" target="_blank">@shine_awards</a></div>
+                    <div class="contact-card"><h3>Поддержка</h3><p>Бот для вопросов.</p><a href="https://t.me/shineaward_bot" target="_blank">@shineaward_bot</a></div>
+                    <div class="contact-card"><h3>Основатель</h3><p>Канал основателя.</p><a href="https://t.me/notworkch" target="_blank">@notworkch</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-brand">ShineAwards WMine IwwiTeam</span>
+            <nav class="footer-links">
+                <a href="#about">О премии</a>
+                <a href="#history">История</a>
+                <a href="#winners">Зал славы</a>
+                <a href="#year2027">2027</a>
+            </nav>
+            <span class="footer-copy">© IwwiTeam, 2025–2027</span>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Наверх">↑</button>
+</div>
+
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-card" id="popupCard"></div>
+</div>
+
+<script>
+    // Звёзды
+    const starsContainer = document.getElementById('starsContainer');
+    for (let i = 0; i < 60; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        star.style.animationDuration = (2 + Math.random() * 3) + 's';
+        starsContainer.appendChild(star);
+    }
+
+    // Анимация букв
+    const heroTitle = document.getElementById('heroTitle');
+    'ShineAwards'.split('').forEach((letter, index) => {
+        const span = document.createElement('span');
+        span.classList.add('title-letter');
+        span.textContent = letter;
+        span.style.animationDelay = (0.3 + index * 0.08) + 's';
+        heroTitle.appendChild(span);
+    });
+
+    // Скролл
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+        scrollBtn.classList.toggle('visible', window.scrollY > 500);
+        document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+    scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Бургер
+    const burgerToggle = document.getElementById('burgerToggle');
+    const burgerClose = document.getElementById('burgerClose');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const toggleMobile = () => mobileMenu.classList.toggle('open');
+    burgerToggle.addEventListener('click', toggleMobile);
+    burgerClose.addEventListener('click', toggleMobile);
+    mobileMenu.querySelectorAll('a').forEach(el => el.addEventListener('click', toggleMobile));
+
+    // Табы
+    document.querySelectorAll('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.dataset.tab;
+            const container = btn.closest('.container');
+            const tabsContainer = btn.closest('.tabs');
+            tabsContainer.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            container.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            const target = document.getElementById(tabId);
+            if (target) target.classList.add('active');
+            if (btn.dataset.theme !== undefined) {
+                const hist = document.getElementById('history');
+                hist.className = hist.className.replace(/theme-\d{4}/g, '').trim();
+                if (btn.dataset.theme) hist.classList.add('theme-' + btn.dataset.theme);
+            }
+        });
+    });
+
+    // Копирование ника
+    document.querySelectorAll('.winner-name').forEach(el => {
+        el.addEventListener('click', () => {
+            const text = el.textContent.trim();
+            navigator.clipboard.writeText(text).then(() => {
+                const orig = el.textContent;
+                el.textContent = '✓';
+                setTimeout(() => el.textContent = orig, 1000);
             });
+        });
+    });
+
+    // Таймер
+    const targetDate = new Date('January 6, 2027 00:00:00').getTime();
+    function updateTimer() {
+        const diff = targetDate - Date.now();
+        if (diff <= 0) return;
+        document.getElementById('t-days').textContent = Math.floor(diff / 86400000);
+        document.getElementById('t-hours').textContent = Math.floor((diff % 86400000) / 3600000);
+        document.getElementById('t-minutes').textContent = Math.floor((diff % 3600000) / 60000);
+        document.getElementById('t-seconds').textContent = Math.floor((diff % 60000) / 1000);
+    }
+    updateTimer();
+    setInterval(updateTimer, 1000);
+
+    // Reveal
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.05 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ИГРЫ
+    const quizData = [
+        { name: 'Shine-King', emoji: '👑', desc: 'Человек, которого все знают. Если он в игре — значит, сегодня будет движ. Его слово имеет вес, а решения не обсуждаются.' },
+        { name: 'Shine-Queen', emoji: '👸', desc: 'Та самая, ради которой игроки строят замки и дарят алмазы. Умная, красивая, и все хотят быть в её клане.' },
+        { name: 'Shine-PVP', emoji: '⚔️', desc: 'Заходишь на арену — и уже знаешь, что проиграешь. Его клики быстрее, чем ты успеваешь моргнуть.' },
+        { name: 'Shine-SMS', emoji: '💬', desc: 'Если чат ожил — значит, он онлайн. Пишет так быстро, что ты не успеваешь дочитать предыдущее сообщение.' },
+        { name: 'Shine-Base', emoji: '🏗️', desc: 'Его постройка выглядит так, будто её делал целый сервер. А на самом деле — один человек с золотыми руками.' },
+        { name: 'Shine-Ghost', emoji: '👻', desc: 'О нём ходят легенды. Заходит раз в месяц на 5 минут, но все его помнят. Кто он? Загадка.' },
+        { name: 'Shine-Dollar', emoji: '💵', desc: 'Его баланс — это телефонный номер. Когда он заходит на аукцион, все сразу закрывают торги.' },
+        { name: 'Shine-Farmer', emoji: '🌾', desc: 'Пока ты спишь — он фармит. Пока ты играешь — он фармит. Его урожай кормит весь сервер.' },
+        { name: 'Shine-Helper', emoji: '🛠️', desc: 'Новичок потерялся? Он уже рядом. Нужен совет? Он уже пишет. Настоящий ангел-хранитель сервера.' },
+        { name: 'Shine-Camper', emoji: '🏕️', desc: 'Его персонаж стоит в афк с самого вайпа. Но когда нужен — он тут как тут. Мастер ожидания.' }
+    ];
+
+    const testQuestions = [
+        { q: 'Ты заходишь на сервер. Что делаешь первым делом?', a: [
+            { t: 'Иду на арену', r: 'Shine-PVP' },
+            { t: 'Пишу в чат', r: 'Shine-SMS' },
+            { t: 'Проверяю базу', r: 'Shine-Base' },
+            { t: 'Иду фармить', r: 'Shine-Farmer' }
+        ]},
+        { q: 'Какой твой стиль игры?', a: [
+            { t: 'Агрессивный', r: 'Shine-PVP' },
+            { t: 'Общительный', r: 'Shine-SMS' },
+            { t: 'Творческий', r: 'Shine-Base' },
+            { t: 'Спокойный', r: 'Shine-Camper' }
+        ]},
+        { q: 'Что для тебя самое важное на сервере?', a: [
+            { t: 'Друзья', r: 'Shine-Friend' },
+            { t: 'Деньги', r: 'Shine-Dollar' },
+            { t: 'Статус', r: 'Shine-King' },
+            { t: 'Помощь другим', r: 'Shine-Helper' }
+        ]},
+        { q: 'Как часто ты играешь?', a: [
+            { t: 'Каждый день', r: 'Shine-King' },
+            { t: 'Пару раз в неделю', r: 'Shine-Popular' },
+            { t: 'Раз в месяц', r: 'Shine-Ghost' },
+            { t: 'По настроению', r: 'Shine-Sweet' }
+        ]},
+        { q: 'Что бы ты купил на аукционе?', a: [
+            { t: 'Редкий предмет', r: 'Shine-Dollar' },
+            { t: 'Привилегию для клана', r: 'Shine-Clan' },
+            { t: 'Украшение для базы', r: 'Shine-Base' },
+            { t: 'Ничего, я просто смотрю', r: 'Shine-Ghost' }
+        ]}
+    ];
+
+    function shuffleArray(arr) { 
+        const a = [...arr]; 
+        for (let i = a.length - 1; i > 0; i--) { 
+            const j = Math.floor(Math.random() * (i + 1)); 
+            [a[i], a[j]] = [a[j], a[i]]; 
+        } 
+        return a; 
+    }
+
+    const overlay = document.getElementById('popupOverlay');
+    const popupCard = document.getElementById('popupCard');
+    
+    function openPopup(html) { popupCard.innerHTML = html; overlay.classList.add('active'); }
+    function closePopup() { overlay.classList.remove('active'); popupCard.innerHTML = ''; }
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) closePopup(); });
+
+    function startQuiz() {
+        const currentQuiz = quizData[Math.floor(Math.random() * quizData.length)];
+        const wrongAnswers = quizData.filter(q => q.name !== currentQuiz.name);
+        const options = shuffleArray([currentQuiz, ...shuffleArray(wrongAnswers).slice(0, 3)]);
+        
+        let html = '<div class="popup-title">🧠 Угадай номинацию</div>';
+        html += '<div style="color:var(--text-secondary);margin-bottom:16px;text-align:center;">' + currentQuiz.desc + '</div>';
+        html += '<div class="quiz-options">';
+        options.forEach(opt => {
+            html += '<button class="quiz-option" data-name="' + opt.name + '" data-correct="' + (opt.name === currentQuiz.name ? '1' : '0') + '">' + opt.emoji + ' ' + opt.name + '</button>';
+        });
+        html += '</div><div class="quiz-result" id="qr"></div>';
+        html += '<button class="quiz-retry" id="qrb">🔄 Ещё раз</button>';
+        html += '<button class="popup-close" onclick="closePopup()">Закрыть</button>';
+        
+        openPopup(html);
+        
+        document.querySelectorAll('.quiz-option').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const all = document.querySelectorAll('.quiz-option');
+                const result = document.getElementById('qr');
+                const retry = document.getElementById('qrb');
+                
+                all.forEach(b => { 
+                    b.style.pointerEvents = 'none'; 
+                    if (b.dataset.correct === '1') b.classList.add('correct'); 
+                });
+                
+                if (this.dataset.correct === '1') {
+                    this.classList.add('correct');
+                    result.textContent = '✅ Верно! ' + currentQuiz.emoji + ' ' + currentQuiz.name;
+                    result.style.color = '#5eff8f';
+                } else {
+                    this.classList.add('wrong');
+                    result.textContent = '❌ Не угадал! Это ' + currentQuiz.emoji + ' ' + currentQuiz.name;
+                    result.style.color = '#ff8f8f';
+                }
+                
+                retry.style.display = 'block';
+                retry.addEventListener('click', () => { closePopup(); startQuiz(); });
+            });
+        });
+    }
+
+    function startTest() {
+        let answers = [];
+        let currentQ = 0;
+        
+        function showQuestion() {
+            if (currentQ >= testQuestions.length) { showResult(); return; }
+            const q = testQuestions[currentQ];
             
-            mobileNav.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileNav.classList.remove('active');
-                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                    mobileMenuBtn.textContent = '☰';
+            let html = '<div class="popup-title">🔮 Кто ты на ShineAwards?</div>';
+            html += '<div style="color:var(--text-muted);text-align:center;font-size:0.8rem;margin-bottom:8px;">Вопрос ' + (currentQ + 1) + ' из ' + testQuestions.length + '</div>';
+            html += '<div style="color:white;font-weight:600;text-align:center;margin-bottom:16px;">' + q.q + '</div>';
+            html += '<div class="quiz-options">';
+            q.a.forEach(opt => {
+                html += '<button class="quiz-option" data-result="' + opt.r + '">' + opt.t + '</button>';
+            });
+            html += '</div>';
+            html += '<button class="popup-close" onclick="closePopup()">Закрыть</button>';
+            
+            openPopup(html);
+            
+            document.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    answers.push(this.dataset.result);
+                    currentQ++;
+                    showQuestion();
                 });
             });
         }
         
-        // Шапка при прокрутке
-        const siteHeader = document.getElementById('site-header');
+        function showResult() {
+            const counts = {};
+            answers.forEach(a => counts[a] = (counts[a] || 0) + 1);
+            let max = 0, result = 'Shine-King';
+            for (let k in counts) { if (counts[k] > max) { max = counts[k]; result = k; } }
+            
+            const data = quizData.find(q => q.name === result) || quizData[0];
+            
+            let html = '<div class="popup-title">🔮 Твой результат</div>';
+            html += '<div style="text-align:center;font-size:3rem;margin-bottom:8px;">' + data.emoji + '</div>';
+            html += '<div style="text-align:center;font-weight:800;font-size:1.3rem;color:var(--gold);margin-bottom:8px;">' + data.name + '</div>';
+            html += '<div style="text-align:center;color:var(--text-secondary);margin-bottom:16px;">' + data.desc + '</div>';
+            html += '<button class="quiz-retry" id="trb" style="display:block;">🔄 Пройти заново</button>';
+            html += '<button class="popup-close" onclick="closePopup()">Закрыть</button>';
+            
+            openPopup(html);
+            document.getElementById('trb').addEventListener('click', () => { answers = []; currentQ = 0; showQuestion(); });
+        }
         
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                siteHeader.classList.add('scrolled');
-            } else {
-                siteHeader.classList.remove('scrolled');
-            }
-        }, { passive: true });
-        
-        // Закрытие мобильного меню по Escape
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && mobileNav && mobileNav.classList.contains('active')) {
-                mobileNav.classList.remove('active');
-                if (mobileMenuBtn) {
-                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
-                    mobileMenuBtn.textContent = '☰';
-                }
-            }
-        });
-    </script>
+        showQuestion();
+    }
+
+    function randomHighlight() {
+        const cards = document.querySelectorAll('.tab-content.active .winner-card');
+        if (cards.length === 0) return;
+        cards.forEach(c => c.style.boxShadow = '');
+        const random = cards[Math.floor(Math.random() * cards.length)];
+        random.style.boxShadow = '0 0 40px rgba(245,212,126,0.7)';
+        random.style.borderColor = 'rgba(245,212,126,0.8)';
+        setTimeout(() => { random.style.boxShadow = ''; random.style.borderColor = ''; }, 3000);
+    }
+
+    document.getElementById('openQuiz').addEventListener('click', startQuiz);
+    document.getElementById('openTest').addEventListener('click', startTest);
+    document.getElementById('randomNominee').addEventListener('click', randomHighlight);
+
+    // Защита
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('copy', e => e.preventDefault());
+</script>
 </body>
 </html>
