@@ -6,6 +6,27 @@
     <title>ShineAwards 2027 | Премия WMine</title>
     <meta name="description" content="ShineAwards — ежегодная премия сообщества WMine. Церемония 6 января 2027.">
     <meta name="theme-color" content="#0a0e1a">
+    
+    <!-- SEO / OG Tags -->
+    <link rel="canonical" href="https://wminepe.github.io/shine/">
+    <meta property="og:title" content="ShineAwards 2027 | Премия WMine">
+    <meta property="og:description" content="Ежегодная премия сообщества WMine. 25 номинаций, аукцион, шоу частиц и подарки для всех. Церемония 6 января 2027.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wminepe.github.io/shine/">
+    <meta property="og:image" content="https://i.ibb.co/4DynBwR/photo-2026-09-07-22-14-23.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ShineAwards 2027 — Премия WMine">
+    <meta property="og:site_name" content="ShineAwards">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ShineAwards 2027 | Премия WMine">
+    <meta name="twitter:description" content="Ежегодная премия сообщества WMine. 25 номинаций, аукцион, шоу частиц. 6 января 2027.">
+    <meta name="twitter:image" content="https://i.ibb.co/4DynBwR/photo-2026-09-07-22-14-23.jpg">
+    <meta name="twitter:image:alt" content="ShineAwards 2027">
+    
     <link rel="icon" href="https://i.ibb.co/Gfpx4nYh/photo-2026-09-04-21-37-34.jpg" type="image/jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -109,7 +130,7 @@
             display: flex; align-items: center; gap: 0.6rem;
             font-family: 'Unbounded', sans-serif;
             font-weight: 800; font-size: 0.9rem; color: white; text-decoration: none;
-            white-space: nowrap;
+            white-space: nowrap; cursor: pointer;
         }
         .brand-icon {
             width: 40px; height: 40px; border-radius: 14px;
@@ -124,7 +145,7 @@
             color: var(--text-secondary); font-size: 0.8rem; font-weight: 500;
             padding: 0.4rem 0.8rem; border-radius: 50px;
             transition: var(--transition-fast); text-decoration: none;
-            white-space: nowrap; position: relative;
+            white-space: nowrap; position: relative; cursor: pointer;
         }
         .nav a::after {
             content: ''; position: absolute;
@@ -170,6 +191,7 @@
             padding: 14px 20px; border-radius: 16px;
             transition: var(--transition-fast);
             opacity: 0; transform: translateY(20px);
+            cursor: pointer;
         }
         .mobile-menu.open .mobile-nav a { opacity: 1; transform: translateY(0); }
         .mobile-menu.open .mobile-nav a:nth-child(1) { transition-delay: 0.05s; }
@@ -363,6 +385,7 @@
             -webkit-backdrop-filter: blur(12px);
             width: 100%;
             transition: var(--transition-fast);
+            cursor: pointer;
         }
         .history-card:hover { transform: translateY(-3px); border-color: rgba(125,211,255,0.2); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
         .history-card-title {
@@ -392,6 +415,7 @@
             border: 1px solid rgba(255,255,255,0.08);
             flex: 1; min-width: 100px;
             transition: var(--transition-fast);
+            cursor: pointer;
         }
         .history-stat:hover { transform: translateY(-2px); background: rgba(255,255,255,0.07); }
         .history-stat-value {
@@ -406,7 +430,7 @@
 
         .winners-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 1rem;
             width: 100%;
         }
@@ -414,10 +438,11 @@
             background: rgba(255,255,255,0.04);
             border: 1px solid rgba(255,255,255,0.08);
             border-radius: 18px;
-            padding: 1.2rem 0.8rem;
+            padding: 1.5rem 1rem;
             text-align: center;
             transition: var(--transition-fast);
             position: relative;
+            cursor: pointer;
         }
         .winner-card:hover {
             transform: translateY(-8px) rotate(-1deg) scale(1.03);
@@ -445,10 +470,32 @@
             box-shadow: 0 20px 50px rgba(0,0,0,0.4), 0 0 60px rgba(255,158,203,0.3);
             transform: translateY(-8px) rotate(-1deg) scale(1.03);
         }
+        .winner-avatar {
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            margin: 0 auto 0.75rem;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Unbounded', sans-serif;
+            font-weight: 800;
+            font-size: 1.3rem;
+            background: linear-gradient(135deg, rgba(125,211,255,0.2), rgba(180,164,255,0.2));
+            color: white;
+            border: 2px solid rgba(255,255,255,0.15);
+        }
+        .gold .winner-avatar {
+            background: linear-gradient(135deg, rgba(245,212,126,0.3), rgba(255,255,255,0.1));
+            border-color: rgba(245,212,126,0.5);
+        }
+        .queen .winner-avatar {
+            background: linear-gradient(135deg, rgba(255,158,203,0.3), rgba(255,255,255,0.1));
+            border-color: rgba(255,158,203,0.5);
+        }
         .winner-badge {
             font-size: 0.6rem; font-weight: 600;
             text-transform: uppercase; letter-spacing: 0.06em;
             color: var(--blue);
+            display: block;
+            margin-bottom: 0.25rem;
         }
         .gold .winner-badge { color: var(--gold); font-weight: 700; }
         .queen .winner-badge { color: var(--rose); font-weight: 700; }
@@ -459,6 +506,12 @@
             margin-top: 0.2rem;
         }
         .winner-name:hover { color: var(--cyan); transform: scale(1.05); }
+        .winner-desc {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+            line-height: 1.4;
+        }
 
         .timer {
             display: flex; gap: 10px; justify-content: center;
@@ -471,6 +524,7 @@
             padding: 0.8rem 1.2rem;
             min-width: 72px; text-align: center;
             transition: var(--transition-fast);
+            cursor: pointer;
         }
         .timer-item:hover { border-color: rgba(110,231,224,0.2); box-shadow: 0 0 30px rgba(110,231,224,0.1); transform: translateY(-3px); }
         .timer-item span {
@@ -500,6 +554,7 @@
             padding: 1.8rem 1rem;
             text-align: center;
             transition: var(--transition-fast);
+            cursor: pointer;
         }
         .program-card:hover { transform: translateY(-6px) rotate(0.5deg) scale(1.02); border-color: rgba(125,211,255,0.15); background: rgba(255,255,255,0.06); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
         .program-icon { font-size: 2.4rem; display: block; margin-bottom: 0.5rem; }
@@ -639,6 +694,7 @@
             border-radius: var(--radius);
             padding: 1.8rem 1.2rem;
             transition: var(--transition-fast);
+            cursor: pointer;
         }
         .contact-card:hover { transform: translateY(-5px) scale(1.02); border-color: rgba(125,211,255,0.15); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
         .contact-card h3 { font-family: 'Unbounded', sans-serif; font-size: 0.85rem; }
@@ -657,7 +713,7 @@
         }
         .footer-brand { font-family: 'Unbounded', sans-serif; font-weight: 700; font-size: 0.9rem; color: var(--text-primary); }
         .footer-links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
-        .footer-links a { color: var(--text-muted); font-size: 0.8rem; text-decoration: none; transition: var(--transition-fast); }
+        .footer-links a { color: var(--text-muted); font-size: 0.8rem; text-decoration: none; transition: var(--transition-fast); cursor: pointer; }
         .footer-links a:hover { color: var(--blue); transform: translateY(-1px); }
         .footer-copy { font-size: 0.75rem; color: var(--text-muted); }
 
@@ -685,7 +741,7 @@
             .hero { padding: 6rem 0 3rem; }
             .hero-title { font-size: clamp(2rem, 7vw, 3.5rem); }
             .section { padding: 3rem 0; }
-            .winners-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+            .winners-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
             .history-card-title { font-size: 1.2rem; }
             .history-stats { flex-direction: column; }
             .history-stat { min-width: unset; }
@@ -705,9 +761,10 @@
 
         @media (max-width: 480px) {
             .container { width: calc(100% - 32px); }
-            .winners-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+            .winners-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
             .winner-name { font-size: 0.7rem; }
             .winner-badge { font-size: 0.5rem; }
+            .winner-desc { font-size: 0.6rem; }
             .program-grid { grid-template-columns: 1fr 1fr; }
             .footer-inner { flex-direction: column; text-align: center; }
             .footer-links { justify-content: center; }
@@ -907,44 +964,44 @@
                 </div>
                 <div class="tab-content" id="winners-2025">
                     <div class="winners-grid">
-                        <div class="winner-card gold"><span class="winner-badge">Shine-King</span><div class="winner-name">iwwi</div></div>
-                        <div class="winner-card queen"><span class="winner-badge">Shine-Queen</span><div class="winner-name">epsportz</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Clan</span><div class="winner-name">anblade</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-PVP</span><div class="winner-name">loon1xx</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-SMS</span><div class="winner-name">mi9056</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Popular</span><div class="winner-name">mopsikzloss</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Telegram</span><div class="winner-name">@iwwichannel</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Year</span><div class="winner-name">stepfatherbtw</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-ЧС</span><div class="winner-name">noxtx</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Base</span><div class="winner-name">wendiks</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Top</span><div class="winner-name">susboy</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Sweet</span><div class="winner-name">epsportz</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Dollar</span><div class="winner-name">iwwi</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Friend</span><div class="winner-name">sans</div></div>
+                        <div class="winner-card gold"><div class="winner-avatar">IW</div><span class="winner-badge">Shine-King</span><div class="winner-name">iwwi</div><div class="winner-desc">Король сервера. Его слово — закон.</div></div>
+                        <div class="winner-card queen"><div class="winner-avatar">EP</div><span class="winner-badge">Shine-Queen</span><div class="winner-name">epsportz</div><div class="winner-desc">Королева, которую все уважают.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">AN</div><span class="winner-badge">Shine-Clan</span><div class="winner-name">anblade</div><div class="winner-desc">Лучший клан сервера.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">LO</div><span class="winner-badge">Shine-PVP</span><div class="winner-name">loon1xx</div><div class="winner-desc">Непобедимый на арене.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">MI</div><span class="winner-badge">Shine-SMS</span><div class="winner-name">mi9056</div><div class="winner-desc">Король чата.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">MO</div><span class="winner-badge">Shine-Popular</span><div class="winner-name">mopsikzloss</div><div class="winner-desc">Самый популярный игрок.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">TG</div><span class="winner-badge">Shine-Telegram</span><div class="winner-name">@iwwichannel</div><div class="winner-desc">Лучший телеграм-канал.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">ST</div><span class="winner-badge">Shine-Year</span><div class="winner-name">stepfatherbtw</div><div class="winner-desc">Игрок года.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">NO</div><span class="winner-badge">Shine-ЧС</span><div class="winner-name">noxtx</div><div class="winner-desc">Выживает там, где другие падают.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">WE</div><span class="winner-badge">Shine-Base</span><div class="winner-name">wendiks</div><div class="winner-desc">Архитектор от бога.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">SU</div><span class="winner-badge">Shine-Top</span><div class="winner-name">susboy</div><div class="winner-desc">Топовый игрок.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">EP</div><span class="winner-badge">Shine-Sweet</span><div class="winner-name">epsportz</div><div class="winner-desc">Самая милая.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">IW</div><span class="winner-badge">Shine-Dollar</span><div class="winner-name">iwwi</div><div class="winner-desc">Самый богатый.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">SA</div><span class="winner-badge">Shine-Friend</span><div class="winner-name">sans</div><div class="winner-desc">Лучший друг.</div></div>
                     </div>
                 </div>
                 <div class="tab-content" id="winners-2026">
                     <div class="winners-grid">
-                        <div class="winner-card gold"><span class="winner-badge">Shine-King</span><div class="winner-name">iwwi</div></div>
-                        <div class="winner-card queen"><span class="winner-badge">Shine-Queen</span><div class="winner-name">qwenty</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Clan</span><div class="winner-name">anblade</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-PVP</span><div class="winner-name">loon1xx</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-SMS</span><div class="winner-name">mi9056</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Popular</span><div class="winner-name">mopsikzloss</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Telegram</span><div class="winner-name">@notworkch</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Year</span><div class="winner-name">anonimys2</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-ЧС</span><div class="winner-name">zxcdeadchik</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Base</span><div class="winner-name">mrfloyka</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Top</span><div class="winner-name">susboy</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Sweet</span><div class="winner-name">wendiks</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Dollar</span><div class="winner-name">leare1</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Friend</span><div class="winner-name">simfers4674</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Farmer</span><div class="winner-name">kevil444</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Mech</span><div class="winner-name">cetcup_top</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Helper</span><div class="winner-name">karma1</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Pair</span><div class="winner-name">karma1 + leare1</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Camper</span><div class="winner-name">mikcer</div></div>
-                        <div class="winner-card"><span class="winner-badge">Shine-Ghost</span><div class="winner-name">session_mcpe</div></div>
+                        <div class="winner-card gold"><div class="winner-avatar">IW</div><span class="winner-badge">Shine-King</span><div class="winner-name">iwwi</div><div class="winner-desc">Король сервера. Его слово — закон.</div></div>
+                        <div class="winner-card queen"><div class="winner-avatar">QW</div><span class="winner-badge">Shine-Queen</span><div class="winner-name">qwenty</div><div class="winner-desc">Королева, которую все уважают.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">AN</div><span class="winner-badge">Shine-Clan</span><div class="winner-name">anblade</div><div class="winner-desc">Лучший клан сервера.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">LO</div><span class="winner-badge">Shine-PVP</span><div class="winner-name">loon1xx</div><div class="winner-desc">Непобедимый на арене.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">MI</div><span class="winner-badge">Shine-SMS</span><div class="winner-name">mi9056</div><div class="winner-desc">Король чата.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">MO</div><span class="winner-badge">Shine-Popular</span><div class="winner-name">mopsikzloss</div><div class="winner-desc">Самый популярный игрок.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">TG</div><span class="winner-badge">Shine-Telegram</span><div class="winner-name">@notworkch</div><div class="winner-desc">Лучший телеграм-канал.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">AN</div><span class="winner-badge">Shine-Year</span><div class="winner-name">anonimys2</div><div class="winner-desc">Игрок года.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">ZX</div><span class="winner-badge">Shine-ЧС</span><div class="winner-name">zxcdeadchik</div><div class="winner-desc">Выживает там, где другие падают.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">MR</div><span class="winner-badge">Shine-Base</span><div class="winner-name">mrfloyka</div><div class="winner-desc">Архитектор от бога.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">SU</div><span class="winner-badge">Shine-Top</span><div class="winner-name">susboy</div><div class="winner-desc">Топовый игрок.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">WE</div><span class="winner-badge">Shine-Sweet</span><div class="winner-name">wendiks</div><div class="winner-desc">Самый милый.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">LE</div><span class="winner-badge">Shine-Dollar</span><div class="winner-name">leare1</div><div class="winner-desc">Самый богатый.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">SI</div><span class="winner-badge">Shine-Friend</span><div class="winner-name">simfers4674</div><div class="winner-desc">Лучший друг.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">KE</div><span class="winner-badge">Shine-Farmer</span><div class="winner-name">kevil444</div><div class="winner-desc">Король фарма.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">CE</div><span class="winner-badge">Shine-Mech</span><div class="winner-name">cetcup_top</div><div class="winner-desc">Инженер от бога.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">KA</div><span class="winner-badge">Shine-Helper</span><div class="winner-name">karma1</div><div class="winner-desc">Ангел-хранитель сервера.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">KA</div><span class="winner-badge">Shine-Pair</span><div class="winner-name">karma1 + leare1</div><div class="winner-desc">Лучшая пара.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">MI</div><span class="winner-badge">Shine-Camper</span><div class="winner-name">mikcer</div><div class="winner-desc">Мастер ожидания.</div></div>
+                        <div class="winner-card"><div class="winner-avatar">SE</div><span class="winner-badge">Shine-Ghost</span><div class="winner-name">session_mcpe</div><div class="winner-desc">Призрак сервера.</div></div>
                     </div>
                 </div>
             </div>
